@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+div{
+    background: rgba(0, 128, 0, 0.3);
+    background-image: url("mario12.jpg");
+    height: 400px;
+    background-repeat: repeat;
+    /*this is applicable only with no repeat  */
+    background-position: top right;
+    background-attachment: fixed;
+}
+.linear{
+        height: 200px;
+background-color: red; 
+
+background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- The background-color property specifies the background color of an element. 
+
+The background-image property specifies an image to use as the background of an element.
+
+Specify that the background image should scroll/fixed with the rest of the page:
+
+background short hand position
+background: #ffffff url("img_tree.png") no-repeat right top;
+
+
+-->
+
+<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab debitis ut dolorem perferendis vel laudantium ea aspernatur accusantium assumenda ullam?</div>
+
+<p>This linear gradient starts red at top left, transitioning to yellow (at bottom right):</p>
+<div class="linear">
+<h1>Welcome to Codingal</h1>
+<h1>Linear Gradient - Diagonal</h1>
+</div>
+
+
+</body>
+</html>

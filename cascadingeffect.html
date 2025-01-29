@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<p>
+Cascading in CSS refers to the process by which the browser determines which style rules to apply when multiple rulestarget the same element. The term “cascading” highlights how CSS applies a hierarchy of rules, where certain rules take
+precedence over others based on defined principles.
+
+
+
+Cascading Order Breakdown
+Here’s a simplified breakdown of the cascading order from highest priority to lowest priority:
+
+!important: Highest priority, regardless of source.
+Inline styles: Next in priority, unless overridden by !important.
+Internal CSS: Styles within a style tag which apply only to that document. 
+External CSS: Styles from external CSS files linked to the HTML document,which apply globally across multiple pages. 
+
+
+Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade
+algorithm is split into 4 distinct stages.
+
+Position and order of appearance: the order of which your CSS rules appear
+Specificity: an algorithm which determines which CSS selector has the strongest match
+Origin: the order of when CSS appears and where it comes from, whether that is a browser style, CSS from a browser
+extension, or your authored CSS
+Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+</p>
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>SVG ellipse Element</h2>
+
+    <svg height="140" width="500" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="120" cy="80" rx="100" ry="50" style="fill:yellow;stroke:green;stroke-width:3" />
+        Sorry, your browser does not support inline SVG.
+    </svg>
+
+</body>
+
+</html>
+</body>
+</html>
